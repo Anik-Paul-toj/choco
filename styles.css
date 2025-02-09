@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    background-color: #f6e1ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+.magic-button {
+    background-color: #d240ff;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
+}
+
+.magic-button:hover {
+    background-color: #e91ee6;
+}
+
+.App-header {
+    background-color: #ffccd5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #d633c6;
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.teddy-image {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: bounce 2s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.message {
+    background-color: #f6eeff;
+    padding: 15px;
+    border-radius: 10px;
+    font-style: italic;
+    animation: fadeIn 3s ease-in-out;
+    cursor: pointer;
+}
+
+.surprise-button {
+    background-color: #7843ffdd;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.surprise-button:hover {
+    background-color: #e64a19;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.teddy-image {
+    width: 300px; /* Adjust size */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    animation: bounce 2s infinite ease-in-out;
+    cursor: pointer;
+}
